@@ -368,22 +368,14 @@ public class StudentManagementSystem{
                     int rollNumber =
                             Integer.parseInt(data[0]);
                     String name = data[1];
-                    Branch branch =
-                            Branch.valueOf(data[2]);
-                    Residence residence =
-                            Residence.valueOf(data[3]);
-                    int classesHeld =
-                            Integer.parseInt(data[4]);
-                    int classesAttended =
-                            Integer.parseInt(data[5]);
-                    double totalFee =
-                            Double.parseDouble(data[6]);
-                    double hostelFee =
-                            Double.parseDouble(data[7]);
-                    double busFee =
-                            Double.parseDouble(data[8]);
-                    double feePaid =
-                            Double.parseDouble(data[9]);
+                    Branch branch =Branch.valueOf(data[2]);
+                    Residence residence =Residence.valueOf(data[3]);
+                    int classesHeld =Integer.parseInt(data[4]);
+                    int classesAttended =Integer.parseInt(data[5]);
+                    double totalFee =Double.parseDouble(data[6]);
+                    double hostelFee =Double.parseDouble(data[7]);
+                    double busFee =Double.parseDouble(data[8]);
+                    double feePaid =Double.parseDouble(data[9]);
                     Student student = new Student(
                             rollNumber,
                             name,
@@ -411,7 +403,6 @@ public class StudentManagementSystem{
             }
 
             reader.close();
-
         }catch (IOException e){
 
             System.out.println(
